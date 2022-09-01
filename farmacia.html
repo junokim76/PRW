@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title>Farmacia doBairro - CTDS - PRW </title> 
+  <link rel="stylesheet" href="formata-formulario.css">
+</head> 
+
+<body> 
+ <h1>- Farmacia - </h1>
+
+ <form action="farmacia.php" method="POST">
+  <fieldset>
+   <legend>Farmacia doBairro - CTDS - PRW</legend> 
+      <label class="alinha"> Nome do Cliente </label>
+      <input type="text" name="nomeCliente" autofocus
+      placeholder="Cliente..."><br>
+
+      <label class="alinha"> Compra Total: (R$) </label>
+      <input type="number" name="valorTotalCompra" min="0" step="0.01"><br>
+	  
+      <fieldset>
+        <p>Selecione a Idade do(a) cliente</p>
+        <hr>
+        <input type="radio" id="clienteAte54" name="faixaEtaria" value="54">
+        <label for="clienteAte54">0 - 54</label><br>
+
+        <input type="radio" id="clienteAcima70" name="faixaEtaria" value="70">
+        <label for="clienteAte70">55 - 70</label><br>
+        
+        <input type="radio" id="clienteAte70" name="faixaEtaria" value="71">
+        <label for="clienteAcima70">70 - MAIS</label>
+
+        <hr>
+        <input type="checkbox" id="cartaoFidelidade" name="cartaoFidelidade" value="0.05">
+        <label for="cartaoFidelidade">Cliente com Cartão Fidelidade</label><br>
+     </fieldset>
+      <button>RECEBE PAGAMENTO</button>
+  </fieldset>
+ </form>    
+</body> 
+</html> 

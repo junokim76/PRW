@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+ font-family: "Roboto Condensed";
+ margin: 0;
+}
+
+h1 {
+ border-bottom: 1px solid #061539;
+ background-color: #4F628E;
+ color: #fff;
+ margin: 0;
+ text-align: center;
+ margin-bottom: 30px;
+}
+
+fieldset {
+ border: 1px solid #888;
+ width: 50%;
+ margin: 20px auto;
+ background-color: rgba(120, 135, 171, 0.2);
+ box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.5);
+ border-radius: 7px;
+}
+
+label.alinha {
+ width: 250px;
+ display: inline-block; /*converte o elemento inline - que não obedece a largura - para nível de bloco, obrigando o navegador a aplicar a mesma largura para todos os labels*/
+ margin-bottom: 10px;
+ text-align: right;
+}
+
+/*seletores de atributos*/
+input[type="text"] {
+ width: 300px;
+}
+
+button {
+ width: 300px;
+ height: 50px;
+ font-family: "Roboto Condensed";
+ font-size: 18px;
+ font-weight: bold;
+ display: block;
+ margin: auto;
+ margin-top: 20px;
+}
+
+p {
+ border: 1px solid #888;
+ background-color: #4F628E;
+ color: #fff;
+ text-align: center;
+ width: 70%;
+ margin: auto;
+}
+
+span {
+ font-weight: bold;
+ font-style: italic;
+}
